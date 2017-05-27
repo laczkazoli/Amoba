@@ -18,15 +18,6 @@ public class Main {
 	 * This is the main method.
 	 * 
 	 * @param args is the argument
-	 * @exception <pre>try{
-		FileHandler fh = new FileHandler("MyLogFile.log");
-		fh.setFormatter(new SimpleFormatter()); 
-		logger.addHandler(fh);
-		}catch(SecurityException se){ 
-			logger.warning(se.getMessage());
-		}catch(IOException ioe){
-			logger.warning(ioe.getMessage());
-		} </pre>
 	 */
 	public static void main(String[] args) {
 
