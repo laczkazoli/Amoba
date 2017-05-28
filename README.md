@@ -1,8 +1,11 @@
-#Programozási környezetek
-#Amoba game
+# Programozási környezetek
+
+# Amoba game
+
 This is a two player Amoba game. You need to have five pair next to each other
 
-##Running
+## Running
+
 ```sh
 mvn package
 java -jar target/Amoba-0.1-jar-with-dependencies.jar
@@ -14,7 +17,8 @@ mvn compile
 mvn install
 java -jar target/Amoba-0.1-jar-with-dependencies.jar
 ```
-##Site
+## Site
+
 ```sh
 mvn clean
 mvn compile

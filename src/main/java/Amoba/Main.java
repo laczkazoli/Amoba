@@ -7,16 +7,18 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 /**
  * This is the main class.
+ * <code> Main </code>
  * @author zoli
  *
  */
 public class Main {
 	
+	
 	public static final Logger logger = Logger.getLogger(Main.class.getName());
 
 	/**
 	 * This is the main method.
-	 * 
+	 * This method instantiation the <code> FileHandler </code> and PreWindow
 	 * @param args is the argument
 	 */
 	public static void main(String[] args) {

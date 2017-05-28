@@ -18,6 +18,11 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
+/**
+ * This {@code Window} class is responsible for the gammer window.
+ * @author zoli
+ *
+ */
 public class Window extends JPanel {
 
 	/**
@@ -31,7 +36,8 @@ public class Window extends JPanel {
 	static int[][] matrix;
 
 	/**
-	 * This method create the window.
+	 * This is the {@code Window} constructor with one parameter.
+	 * This method create the window
 	 * 
 	 * @param N is the size of the window
 	 */
@@ -46,6 +52,11 @@ public class Window extends JPanel {
 		szamlalo = 0;
 		display();
 	}
+	/**
+	 * 
+	 * @author zoli
+	 *
+	 */
 
 	private static class TicButton extends JButton {
 
@@ -75,7 +86,7 @@ public class Window extends JPanel {
 		}
 
 		/**
-		 * This method is containing the passes after a click.
+		 * This {@code TicButton} is the constructor with two parameter.
 		 * 
 		 * @param i get which position you clicked it
 		 * @param N is the size of the window
