@@ -28,10 +28,11 @@ public class ExceptionWindow extends JPanel {
 	 * 
 	 */
 	void firstdisplay() {
+		
 
 		JFrame f1 = new JFrame("HIBA");
 		JMenuBar bar = new JMenuBar();
-		JLabel lab = new JLabel("A hiba kovetkezo: " + PreWindow.except);
+		JLabel lab = new JLabel("A hiba kovetkezo: " + PreWindow.except +" A minimu ertek 5");
 		JButton jbutton = new JButton("Back");
 		JMenu failmenu = new JMenu("File");
 		JMenuItem exit = new JMenuItem("Exit");
@@ -59,7 +60,7 @@ public class ExceptionWindow extends JPanel {
 		f1.add(this);
 		f1.pack();
 		f1.setLocationRelativeTo(null);
-		f1.setSize(200, 150);
+		f1.setSize(350, 200);
 		f1.setVisible(true);
 	}
 

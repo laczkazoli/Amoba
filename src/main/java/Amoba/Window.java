@@ -168,9 +168,7 @@ public class Window extends JPanel {
 		f = new JFrame("Amoba");
 		JMenuBar bar = new JMenuBar();
 		JMenu failmenu = new JMenu("File");
-		JMenuItem save = new JMenuItem("Save");
 		JMenuItem exit = new JMenuItem("Exit");
-		failmenu.add(save);
 		failmenu.add(exit);
 		f.setResizable(false);
 
