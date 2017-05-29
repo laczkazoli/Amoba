@@ -1,10 +1,7 @@
 package Amoba;
 
-import java.io.IOException;
-import java.util.logging.FileHandler;
-import java.util.logging.Level;
+
 import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
 /**
  * This is the main class.
  * <code> Main </code>
@@ -13,32 +10,29 @@ import java.util.logging.SimpleFormatter;
  */
 public class Main {
 	
-	
-	public static final Logger logger = Logger.getLogger(Main.class.getName());
-
+	/**
+	 * A Logger object is used to log messages for a specific system or application component.
+	 */
+	public static Logger logger;
 	/**
 	 * This is the main method.
 	 * This method instantiation the <code> FileHandler </code> and PreWindow
 	 * @param args is the argument
 	 */
 	public static void main(String[] args) {
-
-		try{
-		FileHandler fh = new FileHandler("MyLogFile.log");
-		fh.setFormatter(new SimpleFormatter()); 
-		logger.addHandler(fh);
-		}catch(SecurityException se){ 
-			logger.warning(se.getMessage());
-		}catch(IOException ioe){
-			logger.warning(ioe.getMessage());
-		}
 		
-		logger.setUseParentHandlers(false); 
-		logger.setLevel(Level.FINEST);
-
-		logger.info("The program is running ");
 		
+		inicializeLogging();
+		logger.info("The program is running ");		
 		new PreWindow().firstdisplay();
+		
+	}
+	/**
+	 * Inicialize the Logger.
+	 */
+	public static void inicializeLogging(){
+		new UtilControl().createConfigFile();
+		logger = Logger.getLogger(Main.class.getName());
 	}
 
 }

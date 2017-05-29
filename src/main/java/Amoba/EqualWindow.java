@@ -3,7 +3,11 @@ package Amoba;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-
+/**
+ * This class creat the equal window.
+ * @author zoli
+ *
+ */
 public class EqualWindow {
 	
 /**

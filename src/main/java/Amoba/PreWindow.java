@@ -11,14 +11,20 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-
+/**
+ * This window can read the size of the table.
+ * @author zoli
+ *
+ */
 public class PreWindow extends JPanel {
 
 	/**
 	 * The serialVersionUID is a universal version identifier for a Serializable class.
 	 */
 	private static final long serialVersionUID = 1L;
-
+/**
+ * This except contains the exceotion string.
+ */
 	static String except;
 
 	/**
@@ -71,13 +77,11 @@ public class PreWindow extends JPanel {
 					Main.logger.warning(nfe.getMessage());
 					f.setVisible(false);
 					except = "hiba -> NFE";
-					// System.out.println("hiba -> NFE");
 					new ExceptionWindow().firstdisplay();
 
 				} catch (IllegalArgumentException iae) {
 					Main.logger.warning(iae.getMessage());
-					except = "hiba -> IAE";
-					// System.out.println("hiba -> IAE");
+					except = "hiba -> IAE";;
 					new ExceptionWindow().firstdisplay();
 				}
 			}
@@ -95,8 +99,6 @@ public class PreWindow extends JPanel {
 						f.setVisible(false);
 						new ExceptionWindow().firstdisplay();
 					} else {
-						// Window.N = numb1;
-						// System.out.println(Window.N);
 						System.out.println("numb erteke elso: " + numb1);
 						jlabel.setText(String.valueOf(numb1));
 						f.setVisible(false);
@@ -106,13 +108,11 @@ public class PreWindow extends JPanel {
 					Main.logger.warning(nfe.getMessage());
 					f.setVisible(false);
 					except = "hiba -> NFE";
-					// System.out.println("hiba -> NFE");
 					new ExceptionWindow().firstdisplay();
 
 				} catch (IllegalArgumentException iae) {
 					Main.logger.warning(iae.getMessage());
 					except = "hiba -> IAE";
-					// System.out.println("hiba -> IAE");
 					new ExceptionWindow().firstdisplay();
 				}
 			}

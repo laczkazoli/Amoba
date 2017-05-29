@@ -1,5 +1,10 @@
 package Amoba;
 
+/**
+ * This class search the winner pozition.
+ * @author zoli
+ *
+ */
 public class Find {
 	/**
 	 * This method can reduce the matrix wherein we are searching.

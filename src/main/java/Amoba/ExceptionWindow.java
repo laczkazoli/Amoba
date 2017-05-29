@@ -9,7 +9,11 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
-
+/**
+ * This class creat the exception window.
+ * @author zoli
+ *
+ */
 public class ExceptionWindow extends JPanel {
 
 	/**

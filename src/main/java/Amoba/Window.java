@@ -29,10 +29,21 @@ public class Window extends JPanel {
 	 * The serialVersionUID is a universal version identifier for a Serializable class.
 	 */
 	private static final long serialVersionUID = 1L;
-
+	/**
+	 * This is the size of the table.
+	 */
 	private static final int SIZE = 600;
+	/**
+	 * This is the player counter.
+	 */
 	static int szamlalo = 0;
+	/**
+	 * This is the frame.
+	 */
 	static JFrame f;
+	/**
+	 * this is the matrix table.
+	 */
 	static int[][] matrix;
 
 	/**
@@ -93,7 +104,6 @@ public class Window extends JPanel {
 		 */
 		public TicButton(int i, int N) {
 
-			super(i / N + "," + i % N);
 			this.setOpaque(true);
 			this.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.black));
 

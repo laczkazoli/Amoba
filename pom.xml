@@ -5,7 +5,7 @@
 	<artifactId>Amoba</artifactId>
 	<version>1.0</version>
 
-	<description>This is a two player Amoba game</description>
+	<description>This is a two player Amoba game. You need to have five pair next to each other</description>
 	<developers>
 		<developer>
 			<name>Zoltán Laczka</name>
@@ -78,6 +78,26 @@
 							<descriptorRefs>
 								<descriptorRef>jar-with-dependencies</descriptorRef>
 							</descriptorRefs>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>1.4.1</version>
+				<executions>
+					<execution>
+						<id>enforce-java</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireJavaVersion>
+									<version>1.8</version>
+								</requireJavaVersion>
+							</rules>
 						</configuration>
 					</execution>
 				</executions>
